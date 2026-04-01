@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Water Crystals — The School of Love</title>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@300;400;500&family=Playfair+Display:ital,wght@0,400;0,500;1,400;1,500&family=EB+Garamond:ital,wght@0,300;0,400;1,300;1,400&family=Raleway:wght@200;300;400&display=swap" rel="stylesheet">
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0;}
+html{scroll-behavior:smooth;}
+:root{
+  --terra:#8B5240;--terra-light:#A8685A;--terra-pale:#F0E0D8;
+  --terra-deep:#5C3020;--gold:#C9A96E;--gold-light:#E2CFA0;
+  --bg:#FAF6F0;--bg-alt:#F3EDE4;--bg-parchment:#EDE5D8;
+  --text:#2E1810;--text-mid:#5A3828;--text-muted:#7A5848;
+  --border:rgba(139,82,64,0.18);
+  --font-title:'Cinzel',serif;--font-display:'Playfair Display',serif;
+  --font-body:'EB Garamond',serif;--font-sans:'Raleway',sans-serif;
+}
+body{background:var(--bg);color:var(--text);font-family:var(--font-body);overflow-x:hidden;}
+
+@media(max-width:768px){
+  
+  .tool-topbar span{display:none;}
+  
+  
+  
+  
+  
+  .crystals-tab-grid{grid-template-columns:1fr 1fr;gap:1rem;}
+  .scent-tab-grid{grid-template-columns:1fr;}
+  .emoto-tab-inner{grid-template-columns:1fr;gap:2rem;}
+}
+
+
+/* TOOL PAGE NAV */
+.tool-topbar {
+  background: rgba(250,246,240,0.97);
+  border-bottom: 1px solid var(--border);
+  padding: 0 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  backdrop-filter: blur(16px);
+  height: 58px;
+}
+.tool-home {
+  font-family: var(--font-title);
+  font-size: 0.78rem;
+  letter-spacing: 0.22em;
+  color: var(--terra);
+  text-decoration: none;
+  text-transform: uppercase;
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+.tool-home:hover { opacity: 0.7; }
+.tool-back {
+  font-family: var(--font-sans);
+  font-size: 0.58rem;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--text-muted);
+  text-decoration: none;
+  white-space: nowrap;
+  flex-shrink: 0;
+  border: 1px solid rgba(139,82,64,0.25);
+  padding: 0.38rem 0.9rem;
+  transition: all 0.3s;
+}
+.tool-back:hover { color: var(--terra); border-color: var(--terra); background: var(--terra-pale); }
+
+/* TOOL TABS */
+.tool-tabs {
+  display: flex;
+  border-bottom: 1px solid var(--border);
+  background: var(--bg);
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+}
+.tool-tab {
+  flex: 1;
+  min-width: 120px;
+  padding: 1rem 1rem;
+  border: none;
+  border-bottom: 2px solid transparent;
+  background: none;
+  cursor: pointer;
+  font-family: var(--font-sans);
+  font-size: 0.58rem;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: var(--text-muted);
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  transition: all 0.3s;
+  white-space: nowrap;
+}
+.tool-tab:hover { color: var(--terra); background: var(--terra-pale); }
+.tool-tab.active { color: var(--terra); border-bottom-color: var(--terra); background: var(--bg-alt); }
+
+/* CONTENT */
+.tool-content { max-width: 1100px; margin: 0 auto; padding: 4rem 3rem 6rem; }
+
+@media(max-width: 768px) {
+  .tool-topbar { padding: 0 1.2rem; }
+  .tool-back { display: none; }
+  .tool-home { font-size: 0.65rem; }
+  .tool-tab { min-width: 0; padding: 0.85rem 0.5rem; font-size: 0.5rem; letter-spacing: 0.12em; }
+  .tool-content { padding: 2rem 1.2rem 4rem; }
+}
+
+</style>
+</head>
+<body>
+<div class="tool-topbar">
+  <a href="index.html" class="tool-home">The School of Love</a>
+  <a href="index.html" class="tool-back">← Return to Sanctuary</a>
+</div>
+<div class="tool-tabs">
+  <a class="tool-tab active" href="tool-water-crystals.html">Water Crystals</a>
+  <a class="tool-tab " href="tool-crystals.html">Crystal Collection</a>
+  <a class="tool-tab " href="tool-scent.html">Scent & Acoustics</a>
+  <a class="tool-tab " href="tool-bowls.html">Singing Bowls</a>
+  <a class="tool-tab " href="tool-library.html">The Library</a>
+</div>
+<div class="tool-content">
+<div class="emoto-tab-inner">
+        <div>
+          <div class="eyebrow left">The Science of Love</div>
+          <h2 class="headline">Dr. Masaru Emoto &<br><em>the memory of water</em></h2>
+          <p class="body-text" style="margin-bottom:1.4rem;">In the 1990s, Dr. Masaru Emoto discovered that water exposed to loving words, music, and prayer formed beautiful symmetrical ice crystals. Water exposed to harsh words formed broken, chaotic patterns.</p>
+          <p class="body-text" style="margin-bottom:1.4rem;">The human body is approximately 70% water. Every session here is an act of saying something beautiful to your water. To yourself.</p>
+        </div>
+        <div style="display:flex;flex-direction:column;align-items:center;gap:2rem;">
+          <div class="water-crystal-grid">
+            <div class="water-crystal">
+              <svg viewBox="0 0 100 100" width="90" xmlns="http://www.w3.org/2000/svg"><g transform="translate(50,50)"><line x1="0" y1="-36" x2="0" y2="36" stroke="#A8C8E8" stroke-width="1.2" opacity="0.8"/><line x1="-31" y1="-18" x2="31" y2="18" stroke="#A8C8E8" stroke-width="1.2" opacity="0.8"/><line x1="31" y1="-18" x2="-31" y2="18" stroke="#A8C8E8" stroke-width="1.2" opacity="0.8"/><line x1="0" y1="-24" x2="-8" y2="-30" stroke="#B8D8F0" stroke-width="0.8" opacity="0.65"/><line x1="0" y1="-24" x2="8" y2="-30" stroke="#B8D8F0" stroke-width="0.8" opacity="0.65"/><line x1="0" y1="-16" x2="-6" y2="-20" stroke="#B8D8F0" stroke-width="0.8" opacity="0.65"/><line x1="0" y1="-16" x2="6" y2="-20" stroke="#B8D8F0" stroke-width="0.8" opacity="0.65"/><line x1="-20" y1="-12" x2="-26" y2="-6" stroke="#B8D8F0" stroke-width="0.8" opacity="0.6"/><line x1="-20" y1="-12" x2="-22" y2="-18" stroke="#B8D8F0" stroke-width="0.8" opacity="0.6"/><line x1="20" y1="-12" x2="26" y2="-6" stroke="#B8D8F0" stroke-width="0.8" opacity="0.6"/><line x1="20" y1="-12" x2="22" y2="-18" stroke="#B8D8F0" stroke-width="0.8" opacity="0.6"/><line x1="0" y1="24" x2="-8" y2="30" stroke="#B8D8F0" stroke-width="0.8" opacity="0.65"/><line x1="0" y1="24" x2="8" y2="30" stroke="#B8D8F0" stroke-width="0.8" opacity="0.65"/><circle r="5" fill="white" opacity="0.9"/><circle r="2.5" fill="white"/><polygon points="0,-38 33,-19 33,19 0,38 -33,19 -33,-19" fill="none" stroke="#C8E0F8" stroke-width="0.6" opacity="0.5"/></g></svg>
+              <span class="wc-label">Love</span>
+            </div>
+            <div class="water-crystal">
+              <svg viewBox="0 0 100 100" width="90" xmlns="http://www.w3.org/2000/svg"><g transform="translate(50,50)"><line x1="0" y1="-38" x2="0" y2="38" stroke="#C8A888" stroke-width="1.2" opacity="0.75"/><line x1="-33" y1="-19" x2="33" y2="19" stroke="#C8A888" stroke-width="1.2" opacity="0.75"/><line x1="33" y1="-19" x2="-33" y2="19" stroke="#C8A888" stroke-width="1.2" opacity="0.75"/><line x1="0" y1="-26" x2="-9" y2="-32" stroke="#D8B898" stroke-width="0.8" opacity="0.6"/><line x1="0" y1="-26" x2="9" y2="-32" stroke="#D8B898" stroke-width="0.8" opacity="0.6"/><line x1="-22" y1="-13" x2="-28" y2="-7" stroke="#D8B898" stroke-width="0.8" opacity="0.55"/><line x1="-22" y1="-13" x2="-24" y2="-19" stroke="#D8B898" stroke-width="0.8" opacity="0.55"/><line x1="22" y1="-13" x2="28" y2="-7" stroke="#D8B898" stroke-width="0.8" opacity="0.55"/><line x1="22" y1="-13" x2="24" y2="-19" stroke="#D8B898" stroke-width="0.8" opacity="0.55"/><line x1="0" y1="26" x2="-9" y2="32" stroke="#D8B898" stroke-width="0.8" opacity="0.6"/><line x1="0" y1="26" x2="9" y2="32" stroke="#D8B898" stroke-width="0.8" opacity="0.6"/><circle r="5" fill="white" opacity="0.9"/><circle r="2.5" fill="white"/><polygon points="0,-40 35,-20 35,20 0,40 -35,20 -35,-20" fill="none" stroke="#D8B898" stroke-width="0.5" opacity="0.45"/></g></svg>
+              <span class="wc-label">Gratitude</span>
+            </div>
+            <div class="water-crystal">
+              <svg viewBox="0 0 100 100" width="90" xmlns="http://www.w3.org/2000/svg"><g transform="translate(50,50)"><line x1="0" y1="-36" x2="0" y2="36" stroke="#88B868" stroke-width="1.2" opacity="0.7"/><line x1="-31" y1="-18" x2="31" y2="18" stroke="#88B868" stroke-width="1.2" opacity="0.7"/><line x1="31" y1="-18" x2="-31" y2="18" stroke="#88B868" stroke-width="1.2" opacity="0.7"/><line x1="0" y1="-24" x2="-8" y2="-30" stroke="#A0C880" stroke-width="0.8" opacity="0.55"/><line x1="0" y1="-24" x2="8" y2="-30" stroke="#A0C880" stroke-width="0.8" opacity="0.55"/><line x1="-20" y1="-12" x2="-26" y2="-6" stroke="#A0C880" stroke-width="0.8" opacity="0.5"/><line x1="-20" y1="-12" x2="-22" y2="-18" stroke="#A0C880" stroke-width="0.8" opacity="0.5"/><line x1="20" y1="-12" x2="26" y2="-6" stroke="#A0C880" stroke-width="0.8" opacity="0.5"/><line x1="20" y1="-12" x2="22" y2="-18" stroke="#A0C880" stroke-width="0.8" opacity="0.5"/><line x1="0" y1="24" x2="-8" y2="30" stroke="#A0C880" stroke-width="0.8" opacity="0.55"/><line x1="0" y1="24" x2="8" y2="30" stroke="#A0C880" stroke-width="0.8" opacity="0.55"/><circle r="5" fill="white" opacity="0.9"/><circle r="2.5" fill="white"/><polygon points="0,-38 33,-19 33,19 0,38 -33,19 -33,-19" fill="none" stroke="#A8D080" stroke-width="0.5" opacity="0.4"/></g></svg>
+              <span class="wc-label">Peace</span>
+            </div>
+          </div>
+          <p class="emoto-caption">Inspired by Dr. Emoto's water crystal photography — each crystal formed in response to the word written on its container</p>
+        </div>
+      </div>
+    </div>
+</div>
+</body>
+</html>
