@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Singing Bowls — The School of Love</title>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@300;400;500&family=Playfair+Display:ital,wght@0,400;0,500;1,400;1,500&family=EB+Garamond:ital,wght@0,300;0,400;1,300;1,400&family=Raleway:wght@200;300;400&display=swap" rel="stylesheet">
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0;}
+html{scroll-behavior:smooth;}
+:root{
+  --terra:#8B5240;--terra-light:#A8685A;--terra-pale:#F0E0D8;
+  --terra-deep:#5C3020;--gold:#C9A96E;--gold-light:#E2CFA0;
+  --bg:#FAF6F0;--bg-alt:#F3EDE4;--bg-parchment:#EDE5D8;
+  --text:#2E1810;--text-mid:#5A3828;--text-muted:#7A5848;
+  --border:rgba(139,82,64,0.18);
+  --font-title:'Cinzel',serif;--font-display:'Playfair Display',serif;
+  --font-body:'EB Garamond',serif;--font-sans:'Raleway',sans-serif;
+}
+body{background:var(--bg);color:var(--text);font-family:var(--font-body);overflow-x:hidden;}
+
+
+
+
+/* TOOL PAGE NAV */
+.tool-topbar {
+  background: rgba(250,246,240,0.97);
+  border-bottom: 1px solid var(--border);
+  padding: 0 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  backdrop-filter: blur(16px);
+  height: 58px;
+}
+.tool-home {
+  font-family: var(--font-title);
+  font-size: 0.78rem;
+  letter-spacing: 0.22em;
+  color: var(--terra);
+  text-decoration: none;
+  text-transform: uppercase;
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+.tool-home:hover { opacity: 0.7; }
+.tool-back {
+  font-family: var(--font-sans);
+  font-size: 0.58rem;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--text-muted);
+  text-decoration: none;
+  white-space: nowrap;
+  flex-shrink: 0;
+  border: 1px solid rgba(139,82,64,0.25);
+  padding: 0.38rem 0.9rem;
+  transition: all 0.3s;
+}
+.tool-back:hover { color: var(--terra); border-color: var(--terra); background: var(--terra-pale); }
+
+/* TOOL TABS */
+.tool-tabs {
+  display: flex;
+  border-bottom: 1px solid var(--border);
+  background: var(--bg);
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+}
+.tool-tab {
+  flex: 1;
+  min-width: 120px;
+  padding: 1rem 1rem;
+  border: none;
+  border-bottom: 2px solid transparent;
+  background: none;
+  cursor: pointer;
+  font-family: var(--font-sans);
+  font-size: 0.58rem;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: var(--text-muted);
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  transition: all 0.3s;
+  white-space: nowrap;
+}
+.tool-tab:hover { color: var(--terra); background: var(--terra-pale); }
+.tool-tab.active { color: var(--terra); border-bottom-color: var(--terra); background: var(--bg-alt); }
+
+/* CONTENT */
+.tool-content { max-width: 1100px; margin: 0 auto; padding: 4rem 3rem 6rem; }
+
+
+
+
+@media(max-width:768px){
+  .tool-topbar{padding:0 1.2rem;height:50px;}
+  .tool-back{display:none;}
+  .tool-home{font-size:0.65rem;letter-spacing:0.15em;}
+  .tool-tabs{overflow-x:auto;-webkit-overflow-scrolling:touch;}
+  .tool-tab{min-width:100px;padding:0.8rem 0.6rem;font-size:0.48rem;letter-spacing:0.1em;flex-shrink:0;}
+  .tool-content{padding:2rem 1.2rem 4rem;}
+  .crystals-tab-grid{grid-template-columns:1fr 1fr;gap:0.8rem;}
+  .scent-tab-grid{grid-template-columns:1fr;}
+  .emoto-tab-inner{grid-template-columns:1fr;gap:2rem;}
+  .water-crystal-grid{gap:1.5rem;}
+  h2.headline{font-size:1.6rem;}
+}
+
+</style>
+</head>
+<body>
+<div class="tool-topbar">
+  <a href="index.html" class="tool-home">The School of Love</a>
+  <a href="index.html" class="tool-back">← Return to Sanctuary</a>
+</div>
+<div class="tool-tabs">
+  <a class="tool-tab " href="tool-water-crystals.html">Water Crystals</a>
+  <a class="tool-tab " href="tool-crystals.html">Crystal Collection</a>
+  <a class="tool-tab " href="tool-scent.html">Scent & Acoustics</a>
+  <a class="tool-tab active" href="tool-bowls.html">Singing Bowls</a>
+  <a class="tool-tab " href="tool-library.html">The Library</a>
+</div>
+<div class="tool-content">
+<div style="max-width:760px;margin:0 auto;text-align:center;">
+        <div class="eyebrow" style="justify-content:center;margin-bottom:1.5rem;">The Singing Bowl Studio</div>
+        <h3 style="font-family:var(--font-display);font-size:1.8rem;font-style:italic;color:var(--terra);margin-bottom:1.5rem;">Sound as medicine</h3>
+        <p class="body-text" style="margin-bottom:1.5rem;">Tibetan and crystal singing bowls, each chosen for their specific healing frequencies. Research shows these tones shift the nervous system from stress to deep rest within minutes.</p>
+        <p class="body-text" style="margin-bottom:2rem;">Lie down on cushions and linen, close your eyes, and let the sound move through you. You don't have to do anything. The bowls do the work.</p>
+        <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:2px;max-width:680px;margin:0 auto;background:rgba(139,82,64,0.07);">
+          <div style="background:var(--bg);padding:1.8rem 1.5rem;text-align:center;"><div style="font-family:var(--font-display);font-size:1.1rem;font-style:italic;color:var(--terra);margin-bottom:0.5rem;">Tibetan Bowls</div><p style="font-family:var(--font-body);font-size:0.9rem;color:var(--text-muted);line-height:1.8;">Ancient hand-hammered bowls producing complex overtones that resonate with the body's own frequency</p></div>
+          <div style="background:var(--bg);padding:1.8rem 1.5rem;text-align:center;"><div style="font-family:var(--font-display);font-size:1.1rem;font-style:italic;color:var(--terra);margin-bottom:0.5rem;">Crystal Bowls</div><p style="font-family:var(--font-body);font-size:0.9rem;color:var(--text-muted);line-height:1.8;">Pure quartz crystal bowls tuned to specific chakra frequencies — clear, penetrating, deeply calming</p></div>
+          <div style="background:var(--bg);padding:1.8rem 1.5rem;text-align:center;"><div style="font-family:var(--font-display);font-size:1.1rem;font-style:italic;color:var(--terra);margin-bottom:0.5rem;">Solo Only</div><p style="font-family:var(--font-body);font-size:0.9rem;color:var(--text-muted);line-height:1.8;">Every session is private — the bowl room holds only you, no shared vibrations, no strangers</p></div>
+        </div>
+      </div>
+    </div>
+</div>
+</body>
+</html>
